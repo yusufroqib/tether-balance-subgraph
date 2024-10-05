@@ -1,5 +1,34 @@
-type ExampleEntity @entity {
-  id: Bytes!
-  count: BigInt!
-  amount: BigInt! # uint256
+# # Token details
+# type Token @entity {
+#   id: ID!
+#   #token name
+#   name: String!
+#   #token symbol
+#   symbol: String!
+#   #decimals used
+#   decimals: BigDecimal!
+# }
+# type Transfer @entity {
+#   id: ID!
+# 	from: Sting!
+# 	to: String!
+#   transaction
+# }
+
+# account details
+type Account @entity {
+	#account address
+	id: ID!
+	#balances
+	balance: BigInt!
 }
+# token balance details
+# type TokenBalance @entity {
+# 	id: ID!
+# 	# #token
+# 	# token: Token!
+# 	#account
+# 	account: Account!
+# 	#amount
+# 	amount: BigDecimal!
+# }
